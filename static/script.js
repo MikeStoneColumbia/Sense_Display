@@ -13,18 +13,15 @@ color_table = {
     'LG': '128,255,128',
 }
 
-color_boxes = document.getElementsByClassName('colorChoices')
-
-for (var i = 0; i < color_boxes.length; i++) {
-    box = color_boxes[i]
-    box.style.background = 'rgb(' + color_table[box.innerHTML] + ')'
-}
-
-document.getElementById('empty').innerHTML = `<span style='color:white'>E</span>`
-
-
 
 function initalConfig() {
+
+    color_boxes = document.getElementsByClassName('colorChoices')
+
+    for (var i = 0; i < color_boxes.length; i++) {
+        box = color_boxes[i]
+        box.style.background = 'rgb(' + color_table[box.innerHTML] + ')'
+    }
 
     display = document.getElementsByClassName('display')
     for (var i = 0; i < display.length; i++) {
