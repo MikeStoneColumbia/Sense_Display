@@ -1,0 +1,56 @@
+body {
+    background: lightgray;
+}
+
+#colorTable {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 4rem;
+    background: gray;
+    border: 2px solid black;
+    box-shadow: 5px 10px #888888;
+}
+
+#senseHat {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    translate: 50%;
+    border: 2px solid black;
+    top: 4em;
+    box-shadow: 5px 10px #888888;
+}
+
+#sendBtn {
+    position: relative;
+    top: 16em;
+    box-shadow: 3px 3px #888888;
+}
+
+.display {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.rows {
+    text-align: center;
+}
+
+.empty {
+    text-decoration: aliceblue;
+}
+
+textarea {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    resize: none;
+    color: gray;
+}
+
+.colorChoices {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+}

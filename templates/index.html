@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sense Display</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+</head>
+
+<body onload="initalConfig()" onkeyup="updateView(event)">
+
+    <h1>Color Table</h1>
+
+    <table id="colorTable">
+        <tr class="rows" id="row1">
+            <td id='red' class="colorChoices">R</td>
+            <td id='green' class="colorChoices">G</td>
+            <td id='blue' class="colorChoices">B</td>
+            <td id='empty' class="colorChoices">E</td>
+        </tr>
+
+        <tr class='rows' id='row2'>
+            <td id='white' class="colorChoices">W</td>
+            <td id='cyan' class="colorChoices">C</td>
+            <td id='yellow' class="colorChoices">Y</td>
+            <td id='orange' class="colorChoices">O</td>
+        </tr>
+
+        <tr class='rows' id='row3'>
+            <td id='pink' class="colorChoices">P</td>
+            <td id='purple' class="colorChoices">PU</td>
+            <td id='darkpink' class="colorChoices">DP</td>
+            <td id='lightgreen' class="colorChoices">LG</td>
+        </tr>
+
+    </table>
+
+
+    <table id='senseHat'>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+        <tr>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+            <td class="display"><textarea>E</textarea></td>
+        </tr>
+
+    </table>
+    <button onclick="send()" id='sendBtn'>Send Design</button>
+
+
+
+</body>
+
+</html>
