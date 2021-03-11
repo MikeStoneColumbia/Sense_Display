@@ -48,7 +48,7 @@ function send() {
     vals = vals.slice(0, -1)
     data = JSON.stringify(vals)
     const Http = new XMLHttpRequest();
-    const url = "http://127.0.0.1:5000/newDesign"
+    const url = " https://35482f6944be.ngrok.io/newDesign"
     Http.open('POST', url)
     Http.setRequestHeader("Content-Type", "application/json")
     Http.responseType = 'text'
