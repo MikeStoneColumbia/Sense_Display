@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request, jsonify
+from sense_hat import SenseHat
+
+sensor = SenseHat()
 
 app = Flask(__name__)
 
@@ -13,12 +16,13 @@ def disaply_senseHat():
     image = []
 
     for pixel in pixels:
-        image.append(tuple(map(int,pixels[0].split(','))))
+        image.append(tuple(map(int,pixel.split(','))))
 
-    print(image)
+    
+    sensor.set_pixels(image)
 
     return jsonify(response='success') # return success if we load
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host='127.0.0.1')
+    app.run(debug=True,port=80,host='0.0.0.0')
